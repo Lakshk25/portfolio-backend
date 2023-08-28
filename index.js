@@ -8,8 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:5500', // Replace with your React app's URL
-    // origin: 'https://lakshsite.netlify.app/', // Replace with your React app's URL
+    origin: 'https://lakshsite.netlify.app/', // Replace with your React app's URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }));
