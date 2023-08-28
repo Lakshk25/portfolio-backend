@@ -9,7 +9,6 @@ router.post('/send', async (req, res) => {
     const { name, email, message } = req.body;
     const newUser = new User({ name, email, message });
     await newUser.save();
-    res.status(201).json(newUser);
   } catch (error) {
     console.error('Error creating user:', error);
     res.status(500).json({ error: 'An error occurred' });
