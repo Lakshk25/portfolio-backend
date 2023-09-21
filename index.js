@@ -17,7 +17,7 @@ app.use(cors({
 app.use('/api', userRoute);
 
 // Serve static assets (like CSS and JS files) from the 'build' folder
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle all other routes by serving the main HTML file
 app.get('*', (req, res) => {
