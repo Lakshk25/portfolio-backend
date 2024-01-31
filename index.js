@@ -16,7 +16,7 @@ app.use(cors({
 
 app.use('/api', userRoute);
 app.get('/', (req, res) => {
-  res.send("running...");
+  res.send("running.......");
 })
 
 // Serve static assets (like CSS and JS files) from the 'build' folder
